@@ -6,10 +6,10 @@
 
           <thead class="table-dark">
             <tr>
-              <th>ID</th>
+              <!-- <th>ID</th> -->
+              <th>Name</th>
               <th>Image</th>
               <th>City</th>
-              <th>Name</th>
               <th>Date</th>
               <th>Time</th>
               <th>Action</th>
@@ -18,16 +18,15 @@
           <tbody>
             <% my_trips.forEach(trips => { %>
                  <tr class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700">
-                    <td class="px-6 py-4"><%= trips.id %></td>
-                    
-                    <td class="px-6 py-4"><%= trips.placeCity %></td>
-                    <td class="px-6 py-4">
-                        <!-- Thêm khung cho hình ảnh -->
-                        <div style="border: 2px solid #ddd; padding: 5px; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center;">
-                            <img src="<%= trips.image %>" alt="Trip Image" style="width: 90px; height: 90px; object-fit: cover; border-radius: 5px;">
-                        </div>
-                    </td>
+                    <!-- <td class="px-6 py-4"><%= trips.id %></td> -->
                     <td class="px-6 py-4"><%= trips.customerName %></td>
+                    <td class="px-6 py-4">
+                      <!-- Thêm khung cho hình ảnh -->
+                      <div style="border: 2px solid #ddd; padding: 5px; width: 100px; height: 100px; display: flex; justify-content: center; align-items: center;">
+                          <img src="<%= trips.image %>" alt="Trip Image" style="width: 90px; height: 90px; object-fit: cover; border-radius: 5px;">
+                      </div>
+                  </td>
+                    <td class="px-6 py-4"><%= trips.placeCity %></td>
                     <td class="px-6 py-4"><%= trips.date %></td>
                     <td class="px-6 py-4"><%= trips.time %></td>
                     
